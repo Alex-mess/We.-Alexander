@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de HTML - Practica HTML</title>
+</head>
+<body>
+    <header id="inicio">
+        <nav class="principal">
+            <a href="#inicio"><img src="imagenes/Logo.png" alt="Imagen del logo" height="50"></a>
+            <a href="#inicio">Inicio</a>
+            <a href="Html/Etiquetas.html">Etiquetas</a>
+            <a href="Html/Atributos.html">Atributos</a>
+            <a href="Html/CSS.html">CSS</a>
+            <a href="Html/Javascript.html">JavaScript</a>
+            <a href="Html/Contacto.html">Contacto</a>
+            <a href="Html/Acercade.html">Acerca de</a>
+        </nav>
+    </header>
+    <hr>
+    <div class="indice">
+        <h1>Contenido</h1>
+    <nav class="secundario">
+        <a href="#articulo1">1. ¿Que es HTML?</a><br>
+        <a href="#articulo2">2. Historia HTML</a><br>
+        <a href="#articulo3">3. Editores de HTML</a><br>
+        <a href="#articulo4">4. Tu primer documento HTML</a><br>
+        <a href="#articulo5">5. ¿Que son Etiquetas en HTML?</a><br>
+        <a href="#articulo6">6. ¿Que son Atributos en HTML?</a><br>
+        <a href="#articulo7">7. Reglas fundamentales en HTML</a><br>
+        <a href="#articulo8">8. Etiquetas Para hacer un documento HTML</a>
+    </nav>
+    </div>
+    <hr>
+    <div class="articulos">
+        <article class="articulo1" id="articulo1">
+            <h2>¿Que es HTML?</h2>
+            <p>HTML (HyperText Markup Language) es un lenguaje de marcado de hipertexto que se utiliza para crear y estructurar páginas web:</p>
+                <ul>
+                    <li>Define el significado y la estructura del contenido de una página web.</li>
+                    <li>Utiliza etiquetas y marcadores para definir cómo se presenta el contenido en un navegador.</li>
+                    <li>Permite incluir texto, imágenes, videos, enlaces y otros recursos multimedia.</li>
+                </ul>
+            <p>Para mostrar contenido en un navegador web, HTML utiliza etiquetas y elementos que permiten etiquetar texto, imágenes y otro 
+                contenido. Por ejemplo, para indicar un párrafo, se utiliza la etiqueta &lt;p&gt;.</p>
+            <p>HTML es la base para la construcción de páginas web, blogs, ecommerces, redes sociales y otros sitios accesibles desde un navegador.<p>
+        </article>
+        <hr>
+        <article class="articulo2" id="articulo2">
+            <h2>Historia HTML</h2>
+            <p>El origen de HTML se remonta a 1980, cuando el físico Tim Berners-Lee, investigador del CERN (Organización Europea para la 
+                Investigación Nuclear) propuso un nuevo sistema de “hipertexto” para compartir documentos.
+                Los sistemas de hipertexto habían sido desarrollados años antes.</p>
+            <p>Tras finalizar el desarrollo de su sistema, Tim Berners-Lee lo presentó a una convocatoria organizada para desarrollar un sistema 
+                de hipertexto para internet. Después de unir sus fuerzas con el ingeniero de sistemas Robert Cailliau, presentaron la propuesta 
+                ganadora llamada WorldWideWeb (W3). El primer documento formal con la descripción de HTML se publicó en 1991 bajo el nombre “HTML 
+                Tags” (Etiquetas HTML) y todavía hoy puede ser consultado en línea a modo de reliquia informática.</p>
+        </article>
+        <hr>
+        <article class="articulo3" id="articulo3">
+            <h2>Editores de HTML</h2>
+            <p>Los editores de HTML son herramientas que permiten crear y editar código HTML para escribir la base de un sitio web.
+                Algunos de los mejores editores de HTML son:</p>
+            <ul>
+                <li>Brackets</li>
+                <li>Komodo</li>
+                <li>Bluefish</li>
+                <li>Notepad++</li>
+                <li>Setka</li>
+                <li>Visual Studio Code</li>
+                <li>Atom</li>
+                <li>Sublime Text</li>
+                <li>Apache NetBeans</li>
+                <li>CKEditor</li>
+            </ul>
+            <p>Los editores de HTML suelen ofrecer funciones básicas como: </p>
+            <ul>
+                <li>Resaltado de sintaxis</li>
+                <li>Autocompletado</li>
+                <li>Validación</li>
+                <li>Insertar elementos y estructuras HTML de uso común</li>
+                <li>Traducción del texto a otros lenguajes, como CSS, XML o JavaScript</li>
+            </ul>
+        </article>
+        <hr>
+        <article class="articulo4" id="articulo4">
+            <h2>Tu primer documento HTML</h2>
+            <p>Para crear un documento HTML, puedes seguir estos pasos:</p>
+                <ol>
+                    <li>Abrir un editor de texto, como el Bloc de Notas de Windows o el Procesador de textos de Ubuntu.</li>
+                    <li>Iniciar el documento con la declaración de tipo de documento &lt;!DOCTYPE html &gt;.</li>
+                    <li>Comenzar el documento con la etiqueta &lt;html&gt; y terminarlo con &lt;/html&gt;.</li>
+                    <li>Entre &lt;body&gt; y &lt;/body&gt; se encuentra la parte visible del documento HTML.</li>
+                    <li>Para crear párrafos de texto, se puede utilizar la etiqueta &lt;p&gt;.</li>
+                    <li>Para abrir un elemento, se coloca la etiqueta de apertura &lt;em&gt; al comienzo de la línea.</li>
+                    <li>Para cerrar el elemento, se coloca la etiqueta de cierre &lt;/em&gt; al final de la línea.</li>
+                    <li>Guardar el documento.</li>
+                    <li>Abrir el documento HTML y verificar que se muestre el contenido en el navegador configurado por defecto.</li>
+                </ol>
+        </article>
+        <hr>
+        <article class="articulo5" id="articulo5">
+            <h2>¿Que son Etiquetas en HTML?</h2>
+            <p>Las "tags" HTML, o "etiquetas" HTML, son códigos utilizados para "marcar" el texto de una página web, con el fin de dar 
+                instrucciones al navegador sobre cómo mostrarlo.</p>
+            <p>Es decir, las etiquetas HTML son el lenguaje utilizado para estructurar y definir el contenido en un documento HTML. Estas 
+                etiquetas se encuentran en el HTML (o Lenguaje de Marcado de Hipertexto) de cada página.</p>
+            <p>Cada etiqueta contiene instrucciones sencillas que indican al navegador cómo dar formato al texto y a definir los diversos 
+                elementos de la página web. Al aplicar estas etiquetas de marcado a los diferentes elementos del texto, se indica al navegador 
+                cómo mostrarlos al usuario, lo que permite crear páginas web estructuradas y con un diseño coherente.</p>
+            <p>Por ejemplo, puedes utilizar etiquetas HTML para aplicar cursivas, crear saltos de línea, insertar objetos multimedia, crear 
+                listas con viñetas o para definir diferentes tipos de contenido en una página web, como encabezados, párrafos, imágenes, enlaces, 
+                formularios y mucho más.</p>
+            <p>En resumen, las etiquetas HTML son esenciales para diseñar y organizar el contenido de una página web de manera efectiva y clara.</p>
+        </article>
+        <hr>
+        <article class="articulo6" id="articulo6">
+            <h2>¿Que son Atributos en HTML?</h2>
+            <p>Los atributos en HTML son fragmentos de código que se utilizan para modificar el comportamiento o la visualización de los elementos
+                HTML. Se agregan a las etiquetas HTML utilizando la sintaxis "nombre de atributo=valor".</p>
+            <p>Algunos ejemplos de atributos HTML son:</p>
+                <ul>
+                    <li>accept: Lista de tipos de archivos que el servidor acepta</li>
+                    <li>align: Especifica el alineamiento horizontal del elemento</li>
+                    <li>alt: Texto alternativo en caso de que la imagen no se pueda mostrar</li>
+                    <li>autocomplete: Indica si los controles en un formulario pueden tener por defecto sus valores completados automáticamente por el navegador</li>
+                    <li>bgcolor: Color de fondo del elemento</li>
+                    <li>color: Establece el color de texto</li>
+                    <li>contenteditable: Indica si el contenido del elemento es editable</li>
+                    <li>id: Define un identificador único (ID) que no debe repetirse en todo el documento</li>
+                    <li>role: Describe la función de un elemento en programas que puedan hacer uso de él, tales como lectores de pantallas o magnificadores</li>
+                </ul>
+            <p>Existen diferentes tipos de atributos, como los requeridos, opcionales, estándares y de evento.</p>
+        </article>
+        <hr>
+        <article class="articulo7" id="articulo7">
+            <h2>Reglas fundamentales en HTML</h2>
+            <p>Algunas reglas fundamentales para HTML son:</p>
+            <ol>
+                <li>Formato: Se deben usar dos espacios para la sangría y no debe haber espacios en blanco al final.</li>
+                <li>Sintaxis: Se debe utilizar la sintaxis HTML5.</li>
+                <li>Atributos: Todos los atributos deben estar entre comillas dobles.</li>
+                <li>Etiquetas: Las etiquetas no distinguen entre mayúsculas y minúsculas, pero es recomendable escribirlas en minúsculas para mayor legibilidad.</li>
+                <li>Atributos en etiquetas: Los atributos se incluyen en la etiqueta de apertura de un elemento, no en la de cierre.</li>
+                <li>Estructura: La estructura HTML de una página web se compone de las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;.</li>
+                <li>Etiqueta de apertura: Las etiquetas de apertura comienzan con el símbolo &lt; &gt;.</li>
+                <li>Etiqueta de cierre: Las etiquetas de cierre terminan con el símbolo &lt;/ &gt;.</li>
+                <li>Contenido: El contenido de una etiqueta son las instrucciones sobre cómo mostrar el elemento en la página.</li>
+            </ol>
+        </article>
+        <hr>
+        <article class="articulo8" id="articulo8">
+            <h2>Etiquetas Para hacer un documento HTML</h2>
+            <p>Para crear un documento HTML, se utilizan etiquetas que se escriben entre ángulos y que se componen de tres partes:</p>
+            <ol>
+                <li>Una etiqueta de apertura que comienza con el símbolo &lt; &gt;</li>
+                <li>Contenido, que son las instrucciones para mostrar el elemento en la página</li>
+                <li>Una etiqueta de cierre que termina con el símbolo &lt;/ &gt;</li>
+            </ol>
+            <p>Algunas etiquetas HTML que se pueden usar para crear un documento son:</p>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt;: Define el tipo de documento</li>
+                <li>&lt;html&gt;: Inicia el documento</li>
+                <li>&lt;head&gt;: Contiene información general del documento, como el título de la página, metaetiquetas, referencias a scripts y estilos</li>
+                <li>&lt;title&gt; &lt;/title&gt;: Inserta el título del documento</li>
+                <li>&lt;body&gt; &lt;/body&gt;: Señala el cuerpo del documento</li>
+                <li>&lt;h1&gt; ... &lt;h6&gt;: Muestra títulos y subtítulos</li>
+                <li>&lt;div&gt;: Define un bloque de contenido o sección de la página web</li>
+                <li>&lt;a&gt;: Realiza enlaces hacia documentos externos o internos</li>
+                <li>&lt;strong&gt;: Define texto importante en el documento</li>
+                <li>&lt;br&gt;: Realiza un salto de línea</li>
+                <li>&lt;p&gt;: Representa un párrafo</li>
+                <li>&lt;img&gt;: Coloca una imagen en el documento</li>
+            </ul>
+            <p>Las etiquetas se pueden escribir en mayúsculas o minúsculas, pero las últimas especificaciones del W3C indican que deben ir en 
+                minúsculas para que el documento esté correctamente creado.</p>
+        </article>
+    </div>
+    <br>
+    <hr>
+    <footer>
+        <div class="autor">
+            <h3>Autor:</h3>
+        <p>Alexander Ledesma Boitel</p>
+        </div>
+        <div class="Contacto">
+            <nav>
+                <a href="https://www.facebook.com/groups/762062025956991/?locale=es_LA"><img src="Imagenes/Facebook.png" alt="Logo Facebook" height="50"></a>
+                <a href="https://www.instagram.com/html_codes/"><img src="Imagenes/Instagram.png" alt="Logo Instagram" height="50"></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Practica HTML</title>
+</head>
+<body>
+    <header id="inicio">
+        <nav class="principal">
+            <a href="../index.html"><img src="../imagenes/Logo.png" alt="Imagen del logo" height="50"></a>
+            <a href="../index.html">Inicio</a>
+            <a href="Etiquetas.html">Etiquetas</a>
+            <a href="Atributos.html">Atributos</a>
+            <a href="#inicio">CSS</a>
+            <a href="Javascript.html">JavaScript</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="Acercade.html">Acerca de</a>
+        </nav>
+    </header>
+    <hr>
+    <div class="indice">
+        <h1>Contenido</h1>
+    <nav class="secundario">
+        <a href="#articulo1">1. ¿Qué es CSS?</a><br>
+        <a href="#articulo2">2. ¿Cómo utilizar CSS con HTML?</a><br>
+        <a href="#articulo3">3. CSS interno</a><br>
+        <a href="#articulo4">4. CSS Externo</a><br>
+        <a href="#articulo5">5. CSS en línea</a><br>
+    </nav>
+    </div>
+    <hr>
+    <div class="articulos">
+        <article class="articulo1" id="articulo1">
+            <h2>¿Qué es CSS?</h2>
+            <p>CSS son las siglas de Cascading Style Sheets, que en español significa "Hojas de Estilo en Cascada". Es un lenguaje de diseño gráfico que permite 
+                controlar cómo se muestran los elementos en una página web, como su color, fuente, disposición, animaciones y efectos visuales.</p>
+            <p>CSS se utiliza junto con el lenguaje HTML, que se encarga del contenido básico de los sitios web. CSS separa el contenido del diseño, lo que facilita la 
+                gestión del aspecto visual de las páginas.<p>
+        </article>
+        <hr>
+        <article class="articulo2" id="articulo2">
+            <h2>¿Cómo utilizar CSS con HTML?</h2>
+            <p>Para utilizar CSS con HTML, puedes hacerlo de varias formas:</p>
+            <ul>
+                <li>Hojas de estilo internas: El código CSS se coloca dentro del documento HTML, ya sea al principio o en el código fuente. Para hacerlo, se puede:
+                    <ol>
+                        <li>Abrir la página HTML y localizar la etiqueta de apertura &lt;head&gt;</li>
+                        <li>Después de la etiqueta &lt;head&gt;, colocar el código &lt;style type="text/css"&gt;</li>
+                        <li>Agregar las reglas CSS en una nueva línea</li>
+                        <li>Escribir la etiqueta de cierre: &lt;/style&gt;</li>
+                    </ol>
+                </li>
+                <li>Hojas de estilo externas: El código CSS se escribe en un archivo separado con la extensión .css y luego se vincula al documento HTML. Para hacerlo, se puede:
+                    <ol>
+                        <li>Crear un nuevo archivo en un editor de texto con la extensión .css</li>
+                        <li>Escribir las reglas CSS en el archivo</li>
+                        <li>Vincular el archivo CSS al documento HTML usando una etiqueta de enlace en la cabecera del documento</li>
+                    </ol>
+                </li>
+                <li>Estilos en línea: El código CSS se escribe en un atributo HTML style en una etiqueta</li>
+            </ul>
+        </article>
+        <hr>
+        <article class="articulo3" id="articulo3">
+            <h2>CSS interno</h2>
+            <p>El CSS interno o incrustado requiere que añadas la etiqueta &lt;style&gt; en la sección &lt;head&gt; de tu documento HTML.</p>
+            <p>Este estilo CSS es un método eficaz para dar estilo a una sola página. Sin embargo, utilizar este estilo para varias páginas requiere mucho tiempo, ya 
+                que es necesario poner reglas CSS en cada página de tu sitio web.</p>
+        </article>
+        <hr>
+        <article class="articulo4" id="articulo4">
+            <h2>CSS Externo</h2>
+            <p>Con el CSS externo, enlazarás tus páginas web a un archivo .css externo, que puede ser creado con cualquier editor de texto de tu dispositivo 
+                (por ejemplo, Notepad++).</p>
+                <p>Este tipo de CSS es un método más eficiente, especialmente para estilizar un sitio web grande. Al editar un archivo .css, puedes cambiar todo tu 
+                    sitio de una sola vez.</p>
+        </article>
+        <hr>
+        <article class="articulo5" id="articulo5">
+            <h2>CSS en línea</h2>
+            <p>El CSS en línea se utiliza para dar estilo a un elemento HTML específico. Para este tipo de estilo CSS, sólo tendrás que añadir el atributo style a cada 
+                etiqueta HTML, sin utilizar selectores.</p>
+            <p>Este tipo de CSS no es realmente recomendable, ya que cada etiqueta HTML debe ser estilizada individualmente. La gestión de tu sitio web puede resultar 
+                demasiado difícil si sólo utilizas CSS en línea.</p>
+            <p>Sin embargo, el CSS en línea en HTML puede ser útil en algunas situaciones. Por ejemplo, en los casos en los que no tienes acceso a archivos CSS o 
+                necesitas aplicar estilos para un solo elemento.</p>
+        </article>
+    </div>
+    <br>
+    <hr>
+    <footer>
+        <div class="autor">
+            <h3>Autor:</h3>
+        <p>Alexander Ledesma Boitel</p>
+        </div>
+        <div class="Contacto">
+            <nav>
+                <a href="https://www.facebook.com/groups/762062025956991/?locale=es_LA"><img src="../Imagenes/Facebook.png" alt="Logo Facebook" height="50"></a>
+                <a href="https://www.instagram.com/html_codes/"><img src="../Imagenes/Instagram.png" alt="Logo Instagram" height="50"></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
